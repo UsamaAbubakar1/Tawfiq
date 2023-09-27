@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "699570548712",
+    "project_id": "tawfiqlogin",
+    "storage_bucket": "tawfiqlogin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:699570548712:android:d588f245b6ff4cd82c7e5d",
+        "android_client_info": {
+          "package_name": "com.example.tawfiqthefooddonationapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkzf-TMpSKW20vTRlAoeGCvLd_GdreuR4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

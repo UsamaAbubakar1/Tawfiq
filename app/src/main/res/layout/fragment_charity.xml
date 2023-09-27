@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hometab"
+    tools:context=".CharityFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_marginTop="60dp"
+        android:padding="16dp">
+
+        <!-- Trust Link 1 Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="8dp"
+            app:cardUseCompatPadding="true"
+            android:layout_marginBottom="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="330dp"
+                android:orientation="vertical"
+                android:background="@drawable/cardbackground"
+                android:padding="16dp">
+
+                <!-- Image for Trust Link 1 -->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:src="@drawable/alkhidmattrust"
+                    android:contentDescription="TODO" />
+
+                <!-- Description for Trust Link 1 -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:maxLines="4"
+                    android:textColor="@color/white"
+                    android:text="@string/al_khidmat_foundation_is_a_non_profit_organization_based_in_lahore_that_focuses_on_a_wide_range_of_humanitarian_services_across_pakistan"
+
+                    android:textSize="16sp" />
+
+                <!-- Donate Now Button for Trust Link 1 -->
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnkhidmat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="16dp"
+                    android:minHeight="48dp"
+                    android:onClick="onDonateNowClick"
+                    android:text="@string/donate_now_khidmat"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="8dp"
+            app:cardUseCompatPadding="true"
+            android:layout_marginBottom="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="330dp"
+                android:orientation="vertical"
+                android:background="@drawable/cardbackground"
+                android:padding="16dp">
+
+                <!-- Image for Trust Link 1 -->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:src="@drawable/edhi"
+                    />
+
+                <!-- Description for Trust Link 1 -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/white"
+                    android:maxLines="4"
+                    android:text="@string/the_edhi_foundation_led_by_mr_abdul_sattar_edhi_and_mrs_bilquis_edhi_is_globally_renowned_and_has_garnered_numerous_awards_for_their_inclusive_humanitarian_work"
+                    android:textSize="16sp" />
+
+                <!-- Donate Now Button for Trust Link 1 -->
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnedhi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="16dp"
+                    android:minHeight="48dp"
+                    android:onClick="onDonateNowClick"
+                    android:text="@string/donate_now" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="8dp"
+            app:cardUseCompatPadding="true"
+            android:layout_marginBottom="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="330dp"
+                android:orientation="vertical"
+                android:background="@drawable/cardbackground"
+                android:padding="16dp">
+
+                <!-- Image for Trust Link 1 -->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:src="@drawable/skhospital"
+                    />
+
+                <!-- Description for Trust Link 1 -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/white"
+                    android:maxLines="4"
+                    android:text="@string/shaukat_khanum_cancer_hospital_founded_by_imran_khan_is_a_prominent_healthcare_trust_in_pakistan_driven_by_his_commitment_to_addressing_the_challenges_of_cancer"
+                    android:textSize="16sp" />
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/skHosppital"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="16dp"
+                    android:minHeight="48dp"
+                    android:onClick="onDonateNowClick"
+                    android:text="@string/donate_now_skhospital" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="8dp"
+            app:cardUseCompatPadding="true"
+            android:layout_marginBottom="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="330dp"
+                android:orientation="vertical"
+                android:background="@drawable/cardbackground"
+                android:padding="16dp">
+
+                <!-- Image for Trust Link 1 -->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:src="@drawable/chipa"
+                    />
+
+                <!-- Description for Trust Link 1 -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/white"
+                    android:maxLines="4"
+                    android:text="@string/chhipa_welfare_association_is_also_one_of_the_very_efficient_trust_organizations_in_pakistan_founded_in_2007_by_ramzan_chhipa"
+                    android:textSize="16sp" />
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/chipa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="16dp"
+                    android:minHeight="48dp"
+                    android:onClick="onDonateNowClick"
+                    android:text="@string/donate_now_chipa" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="8dp"
+            app:cardUseCompatPadding="true"
+            android:layout_marginBottom="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="330dp"
+                android:orientation="vertical"
+                android:background="@drawable/cardbackground"
+                android:padding="16dp">
+
+                <!-- Image for Trust Link 1 -->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:src="@drawable/jdc"
+                    />
+
+                <!-- Description for Trust Link 1 -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/white"
+                    android:maxLines="4"
+                    android:text="@string/jafaria_disaster_management_cell_jdc_welfare_organization_is_working_as_an_independent_non_government_non_profit_and_charitable_organization"
+                    android:textSize="16sp" />
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/jdc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="16dp"
+                    android:minHeight="48dp"
+                    android:maxLines="4"
+                    android:onClick="onDonateNowClick"
+                    android:text="@string/donate_now_jdc" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="8dp"
+            app:cardUseCompatPadding="true"
+            android:layout_marginBottom="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="330dp"
+                android:orientation="vertical"
+                android:background="@drawable/cardbackground"
+                android:padding="16dp">
+
+                <!-- Image for Trust Link 1 -->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:src="@drawable/saylani"
+                    />
+
+                <!-- Description for Trust Link 1 -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/white"
+                    android:maxLines="4"
+                    android:text="@string/saylani_welfare_international_trust_has_been_working_since_1999_to_improve_the_conditions_of_the_less_privileged_helpless_and_handicapped_individuals"
+                    android:textSize="16sp" />
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/saylani"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="16dp"
+                    android:minHeight="48dp"
+                    android:onClick="onDonateNowClick"
+                    android:text="@string/donate_now_saylani" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+
+
+</ScrollView>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/aboutpage"
+    android:orientation="vertical"
+    tools:context=".About">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="404dp"
+        android:layout_marginTop="266dp"
+        android:layout_marginBottom="315dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:maxLength="130"
+            android:text="@string/tawfiq_a_pakistani_food_donation_app_connects_donors_with_those_in_need_reducing_food_waste_and_hunger_while_enabling_impact_tracking"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_marginTop="30dp"
+            android:textStyle="bold" />
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:rowCount="1"
+            android:padding="50dp"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/imgFb"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:src="@drawable/fbimg"
+                android:layout_marginTop="20dp"
+                android:contentDescription="@string/imgfb" />
+
+
+            <ImageView
+                android:id="@+id/imgLink"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:src="@drawable/linkedlnimg"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:contentDescription="@string/imgtwt" />
+
+            <ImageView
+                android:id="@+id/imgTwt"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:src="@drawable/twitter"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:contentDescription="@string/imglink" />
+
+
+    </GridLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
