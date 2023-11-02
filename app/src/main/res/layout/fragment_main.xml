@@ -32,9 +32,11 @@
             android:layout_margin="10dp"
             android:clickable="true"
             android:focusable="true"
-            app:cardBackgroundColor="#FFEB3B"
-            app:cardCornerRadius="12dp"
-            app:cardElevation="5dp">
+            app:cardBackgroundColor="@color/white"
+            android:foreground="@drawable/border_selector"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp"
+            >
 
             <ImageView
                 android:layout_width="50dp"
@@ -42,7 +44,7 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="5dp"
                 android:contentDescription="@string/donate_icon"
-                android:src="@drawable/doanteicon" />
+                android:src="@drawable/donateicon" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -56,6 +58,9 @@
 
         </androidx.cardview.widget.CardView>
 
+
+
+
         <androidx.cardview.widget.CardView
             android:id="@+id/cardReceive"
             android:layout_width="145dp"
@@ -63,9 +68,10 @@
             android:layout_margin="10dp"
             android:clickable="true"
             android:focusable="true"
-            app:cardBackgroundColor="#FFEB3B"
-            app:cardCornerRadius="12dp"
-            app:cardElevation="5dp">
+            app:cardBackgroundColor="@color/white"
+            android:foreground="@drawable/border_selector"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp">
 
             <ImageView
                 android:layout_width="50dp"
@@ -93,16 +99,17 @@
             android:layout_margin="10dp"
             android:clickable="true"
             android:focusable="true"
-            app:cardBackgroundColor="#FFEB3B"
-            app:cardCornerRadius="12dp"
-            app:cardElevation="5dp">
+            app:cardBackgroundColor="@color/white"
+            android:foreground="@drawable/border_selector"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp">
 
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="60dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="5dp"
-                android:src="@drawable/map" />
+                android:src="@drawable/nearbyicon" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -123,9 +130,10 @@
             android:layout_margin="10dp"
             android:clickable="true"
             android:focusable="true"
-            app:cardBackgroundColor="#FFEB3B"
-            app:cardCornerRadius="12dp"
-            app:cardElevation="5dp">
+            app:cardBackgroundColor="@color/white"
+            android:foreground="@drawable/border_selector"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp">
 
             <ImageView
                 android:layout_width="50dp"
@@ -153,9 +161,10 @@
             android:layout_margin="10dp"
             android:clickable="true"
             android:focusable="true"
-            app:cardBackgroundColor="#FFEB3B"
-            app:cardCornerRadius="12dp"
-            app:cardElevation="5dp">
+            app:cardBackgroundColor="@color/white"
+            android:foreground="@drawable/border_selector"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp">
 
             <ImageView
                 android:layout_width="50dp"
@@ -163,7 +172,7 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="5dp"
                 android:contentDescription="@string/contactus_icon"
-                android:src="@drawable/contacusicon" />
+                android:src="@drawable/contactusicon" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -183,9 +192,10 @@
             android:layout_margin="10dp"
             android:clickable="true"
             android:focusable="true"
-            app:cardBackgroundColor="#FFEB3B"
-            app:cardCornerRadius="12dp"
-            app:cardElevation="5dp">
+            app:cardBackgroundColor="@color/white"
+            android:foreground="@drawable/border_selector"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp">
 
             <ImageView
                 android:layout_width="50dp"
@@ -216,8 +226,9 @@
             android:layout_margin="10dp"
             android:clickable="true"
             android:focusable="true"
-            app:cardBackgroundColor="#FFEB3B"
-            app:cardCornerRadius="12dp"
+            app:cardBackgroundColor="@color/white"
+            android:foreground="@drawable/border_selector"
+            app:cardCornerRadius="20dp"
             app:cardElevation="10dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent">

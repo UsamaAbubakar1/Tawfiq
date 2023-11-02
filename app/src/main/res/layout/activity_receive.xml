@@ -35,8 +35,10 @@
             android:maxLength="15"
             android:minHeight="48dp"
             android:textColor="@color/white"
+            android:background="@drawable/border"
             android:textColorHint="#78909C"
-            android:autofillHints="" />
+            android:autofillHints=""
+            android:padding="5dp"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -58,8 +60,10 @@
             android:maxLength="15"
             android:minHeight="48dp"
             android:textColor="@color/white"
+            android:background="@drawable/border"
             android:textColorHint="#78909C"
-            android:autofillHints="" />
+            android:autofillHints=""
+            android:padding="5dp"/>
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/buttonRecv"
@@ -67,6 +71,7 @@
             android:layout_height="wrap_content"
             android:text="@string/receive_btn"
             android:textSize="18sp"
+            android:background="@drawable/rounded_button"
             android:layout_gravity="center"/>
 
     </LinearLayout>

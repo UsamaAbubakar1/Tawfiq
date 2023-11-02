@@ -12,7 +12,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="10dp">
 
         <TextView
             android:layout_width="match_parent"
@@ -28,34 +29,39 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="190dp"
+            android:background="@drawable/border"
             android:contentDescription="@string/app_name"
-            android:src="@drawable/ngo" />
+            android:src="@drawable/nearbyngo" />
 
-        <com.google.android.material.textfield.TextInputLayout
+        <EditText
+            android:id="@+id/nearbyngolocation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/nearbyngolocation"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:fontFamily="monospace"
-                android:hint="Enter Your location"
-                android:textColorHint="@color/white"
-                android:textColor="@color/white"
-                android:inputType="textEmailAddress" />
-
-        </com.google.android.material.textfield.TextInputLayout>
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:hint="Search Near By NGO's"
+            android:importantForAutofill="no"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:padding="12dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:foreground="@drawable/border_selector"
+            android:background="@drawable/rounded_button"
+            android:textColorHint="#78909C"
+            android:textSize="20sp"
+            />
 
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/nearbyngosubmit"
-            android:layout_width="match_parent"
+            android:layout_width="170dp"
+            android:layout_gravity="center"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:text="Submit"
+            android:background="@drawable/rounded_button"
             android:textColor="@color/black" />
     </LinearLayout>
 

@@ -1,18 +1,20 @@
 package com.example.tawfiqthefooddonationapp;
 
 import android.content.Intent;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 
@@ -21,6 +23,9 @@ import java.util.ArrayList;
 public class myadapter extends RecyclerView.Adapter<myadapter.myviewholder> {
 
     ArrayList<model> dataList;
+    public static final String TAG = "TAG";
+    FirebaseFirestore fStore;
+    String userID;
 
     public myadapter(ArrayList<model> dataList) {
         this.dataList = dataList;
@@ -36,6 +41,7 @@ public class myadapter extends RecyclerView.Adapter<myadapter.myviewholder> {
 
     @Override
     public void onBindViewHolder(@NonNull myviewholder holder, int position) {
+
         //Fetch data
         holder.name.setText(dataList.get(position).getName());
         holder.food.setText(dataList.get(position).getFoodItem());
@@ -68,6 +74,27 @@ public class myadapter extends RecyclerView.Adapter<myadapter.myviewholder> {
                 @Override
                 public void onClick(View view) {
                     completeDonation.setVisibility(View.VISIBLE);
+
+                    // Assuming you have a user document in Firestore for the current user.
+                    DocumentReference donorDocument = fStore.collection("user donor").document(userID);
+
+                    donorDocument.delete()
+                            .addOnSuccessListener(new OnSuccessListener<Void>() {
+                                @Override
+                                public void onSuccess(Void aVoid) {
+                                    // The document was successfully deleted.
+                                    // You can perform any additional actions here.
+                                }
+                            })
+                            .addOnFailureListener(new OnFailureListener() {
+                                @Override
+                                public void onFailure(@NonNull Exception e) {
+                                    // Handle the error in case of a failure.
+                                    Toast.makeText(view.getContext(), "Error!", Toast.LENGTH_SHORT).show();
+                                    Log.w(TAG, "Error deleting document", e);
+                                }
+                            });
+
 
                     Intent intent = new Intent(view.getContext(), Timer.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);

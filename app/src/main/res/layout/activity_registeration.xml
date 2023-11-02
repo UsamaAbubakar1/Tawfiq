@@ -38,65 +38,69 @@
     <!-- Full Name EditText -->
         <EditText
             android:id="@+id/fullNameEditText"
-            android:layout_width="350dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginBottom="16dp"
-            android:background="@color/white"
             android:hint="@string/full_name"
             android:importantForAutofill="no"
             android:padding="12dp"
             android:singleLine="true"
             android:textColor="@color/black"
+            android:foreground="@drawable/border_selector"
+            android:background="@drawable/rounded_button"
             android:textColorHint="#757575"
             android:inputType="text" />
 
     <!-- Email EditText -->
         <EditText
             android:id="@+id/emailEditText"
-            android:layout_width="350dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginBottom="16dp"
-            android:background="@color/white"
             android:hint="@string/email_reg"
             android:importantForAutofill="no"
             android:inputType="textEmailAddress"
             android:padding="12dp"
             android:singleLine="true"
             android:textColor="@color/black"
+            android:foreground="@drawable/border_selector"
+            android:background="@drawable/rounded_button"
             android:textColorHint="#757575" />
 
     <!-- Password EditText -->
         <EditText
             android:id="@+id/passwordEditText"
-            android:layout_width="350dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginBottom="16dp"
-            android:background="@color/white"
             android:hint="@string/password"
             android:importantForAutofill="no"
             android:inputType="textPassword"
             android:padding="12dp"
             android:singleLine="true"
             android:textColor="@color/black"
+            android:foreground="@drawable/border_selector"
+            android:background="@drawable/rounded_button"
             android:textColorHint="#757575" />
 
         <EditText
             android:id="@+id/phoneEditText"
-            android:layout_width="350dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:maxLength="12"
             android:layout_marginBottom="16dp"
-            android:background="@color/white"
             android:hint="Phone No. (without +92)"
             android:importantForAutofill="no"
             android:inputType="number"
             android:padding="12dp"
             android:singleLine="true"
             android:textColor="@color/black"
+            android:foreground="@drawable/border_selector"
+            android:background="@drawable/rounded_button"
             android:textColorHint="#757575" />
 
 
@@ -108,6 +112,7 @@
             android:layout_gravity="center"
             android:minHeight="48dp"
             android:text="@string/creat_account_btn"
+            android:background="@drawable/rounded_button"
             android:textColor="@color/black" />
 
 

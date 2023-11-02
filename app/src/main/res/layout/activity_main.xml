@@ -9,19 +9,27 @@
 
 
 
+
+
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/view_pager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:contentDescription="@string/title_activity_tabview" />
 
+
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tab_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
+        android:foreground="@drawable/border_selector"
         android:background="@null"
+        app:tabIndicatorColor="@color/white"
+        app:tabSelectedTextColor="#FDD835"
         app:tabTextColor="@color/white"
+        android:layout_margin="25dp"
+        android:padding="3dp"
         android:contentDescription="@string/app_name"
         app:tabGravity="fill"
         app:tabMode="fixed" />

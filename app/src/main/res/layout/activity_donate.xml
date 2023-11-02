@@ -33,9 +33,11 @@
         android:inputType="text"
         android:maxLength="15"
         android:minHeight="50dp"
+        android:background="@drawable/border"
         android:textColor="@color/white"
         android:textColorHint="#78909C"
-        android:autofillHints="" />
+        android:autofillHints=""
+        android:padding="5dp"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -50,15 +52,18 @@
     <EditText
         android:id="@+id/editTextFoodItems"
         android:layout_width="300dp"
+        android:backgroundTint="#263927"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         android:hint="@string/food_items_donate_activity"
         android:inputType="text"
-        android:maxLength="100"
-        android:minHeight="48dp"
+        android:maxLength="15"
+        android:minHeight="50dp"
+        android:foreground="@drawable/border"
         android:textColor="@color/white"
         android:textColorHint="#78909C"
-        android:autofillHints="" />
+        android:autofillHints=""
+        android:padding="5dp"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -80,8 +85,10 @@
         android:maxLength="15"
         android:minHeight="48dp"
         android:textColor="@color/white"
+        android:background="@drawable/border"
         android:textColorHint="#78909C"
-        android:autofillHints="" />
+        android:autofillHints=""
+        android:padding="5dp"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -103,8 +110,10 @@
             android:maxLength="30"
             android:minHeight="48dp"
             android:textColor="@color/white"
+            android:background="@drawable/border"
             android:textColorHint="#78909C"
-            android:autofillHints="" />
+            android:autofillHints=""
+            android:padding="5dp"/>
 
 
 
@@ -114,6 +123,7 @@
         android:layout_height="wrap_content"
         android:text="@string/donate_donate_activity"
         android:textSize="18sp"
+        android:background="@drawable/rounded_button"
         android:layout_gravity="center"/>
     </LinearLayout>
 </LinearLayout>
