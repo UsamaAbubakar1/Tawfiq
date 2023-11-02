@@ -23,7 +23,7 @@ public class Share extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent();
                 intent.setAction(Intent.ACTION_SEND);
-                intent.putExtra(Intent.EXTRA_TEXT, "Download This App");
+                intent.putExtra(Intent.EXTRA_TEXT, "Download This App: https://github.com/UsamaAbubakar1/Tawfiq");
                 intent.setType("text/plain");
 
 

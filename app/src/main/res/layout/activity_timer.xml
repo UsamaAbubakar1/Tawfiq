@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/timer"
+    android:background="@drawable/timerback"
     android:padding="16dp"
     android:gravity="center"
     tools:context=".Timer">
@@ -22,7 +22,7 @@
             android:fontFamily="serif-monospace"
             android:text="00"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="60sp" />
 
         <TextView
@@ -32,7 +32,7 @@
             android:fontFamily="serif-monospace"
             android:text=":"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="60sp" />
 
         <TextView
@@ -43,7 +43,7 @@
             android:fontFamily="serif-monospace"
             android:text="00"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="60sp" />
 
         <TextView
@@ -53,7 +53,7 @@
             android:fontFamily="serif-monospace"
             android:text=":"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="60sp" />
 
         <TextView
@@ -64,7 +64,7 @@
             android:fontFamily="serif-monospace"
             android:text="00"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="60sp" />
 
     </LinearLayout>
@@ -79,6 +79,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="100dp"
             android:layout_marginStart="10dp"
+            android:background="@drawable/rounded_button"
             android:text="Start"/>
 
         <androidx.appcompat.widget.AppCompatButton
@@ -87,6 +88,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="100dp"
             android:layout_marginLeft="35dp"
+            android:background="@drawable/rounded_button"
             android:text="Stop"/>
 
         <androidx.appcompat.widget.AppCompatButton
@@ -95,10 +97,10 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="100dp"
             android:layout_marginLeft="35dp"
+            android:background="@drawable/rounded_button"
             android:text="Reset"/>
 
     </LinearLayout>
-
 
 
 

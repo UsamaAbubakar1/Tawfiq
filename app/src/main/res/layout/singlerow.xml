@@ -1,91 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    app:cardElevation="4dp"
-    app:cardCornerRadius="8dp"
     android:padding="5dp">
 
 
-    <LinearLayout
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:padding="15dp">
-
-        <TextView
-            android:id="@+id/compltedonation"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"
-            android:text="Donation Sucessfully Completed"
-            android:textColor="#4CAF50"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:visibility="invisible" />
-
-        <TextView
-            android:id="@+id/d_name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Donor Name: "
-            android:textColor="@color/black"
-            android:textSize="22sp" />
-
-        <TextView
-            android:id="@+id/food_item"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:text="Food Items: "
-            android:textColor="@color/black"
-            android:textSize="22sp" />
-
-        <TextView
-            android:id="@+id/d_phone"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:text="Phone Number: "
-            android:textColor="@color/black"
-            android:textSize="22sp" />
-
-        <TextView
-            android:id="@+id/d_address"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:text="Address: "
-            android:textColor="@color/black"
-            android:textSize="22sp" />
-
+        android:layout_height="wrap_content"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="8dp"
+        android:backgroundTint="@color/white"
+        app:cardUseCompatPadding="true"
+        >
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center">
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/compltedonation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Donation Sucessfully Completed"
+                android:visibility="invisible"
+                android:textColor="#4CAF50"
+                android:textSize="20sp"
+                android:padding="10dp"/>
+
+            <TextView
+                android:id="@+id/d_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Donor Name: "
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:padding="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/food_item"
+                android:text="Food Items: "
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:padding="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/d_phone"
+                android:text="Phone Number: "
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:padding="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/d_address"
+                android:text="Address: "
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:padding="10dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="230dp"
+            android:gravity="center"
+            android:padding="20dp"
+            >
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/buttonAccept"
-                android:layout_width="wrap_content"
+                android:layout_width="130dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
+                android:background="@drawable/rounded_button"
+                android:foreground="@drawable/border_selector"
+                android:layout_marginRight="10dp"
                 android:text="Accept" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/buttonReject"
-                android:layout_width="wrap_content"
+                android:layout_width="130dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="15dp"
+                android:foreground="@drawable/border_selector"
+                android:background="@drawable/rounded_button"
                 android:text="Reject" />
 
 
         </LinearLayout>
-    </LinearLayout>
-</androidx.cardview.widget.CardView>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
 
 
 
