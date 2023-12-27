@@ -25,8 +25,6 @@ public class nearbyngo extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_nearbyngo);
-        // Check for internet connectivity
-        checkInternetConnection();
 
         edtLocation = findViewById(R.id.nearbyngolocation);
         btnSubmit = findViewById(R.id.nearbyngosubmit);
@@ -38,21 +36,15 @@ public class nearbyngo extends AppCompatActivity {
                 if (location.isEmpty()) {
                     edtLocation.setError("Please enter the location");
                 } else {
-                    // Check for internet connectivity again
                     if (checkInternetConnection()) {
                         String url = "https://www.google.com/search?q=ngos%20near%20" + location;
-                        Intent i = new Intent(Intent.ACTION_VIEW);
-                        i.setData(Uri.parse(url));
-                        startActivity(i);
+                        Intent intent = new Intent(Intent.ACTION_VIEW);
+                        intent.setData(Uri.parse(url));
+                        startActivity(intent);
                     }
                 }
             }
         });
-
-        if (getSupportActionBar() != null) {
-            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-            getSupportActionBar().setTitle("View nearby NGOs");
-        }
     }
 
     @Override
@@ -66,7 +58,6 @@ public class nearbyngo extends AppCompatActivity {
 
     private boolean checkInternetConnection() {
         ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
-        // Check if connected to a network
         if (connectivityManager != null) {
             NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
             connected = activeNetworkInfo != null && activeNetworkInfo.isConnected();

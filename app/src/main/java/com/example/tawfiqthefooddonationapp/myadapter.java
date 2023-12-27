@@ -12,9 +12,9 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 
@@ -29,24 +29,30 @@ public class myadapter extends RecyclerView.Adapter<myadapter.myviewholder> {
 
     public myadapter(ArrayList<model> dataList) {
         this.dataList = dataList;
+        fStore = FirebaseFirestore.getInstance();
+        userID = FirebaseAuth.getInstance().getCurrentUser().getUid();
+
 
     }
 
     @NonNull
     @Override
     public myviewholder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.singlerow, parent, false);
+        LayoutInflater inflater = LayoutInflater.from(parent.getContext());
+        View view = inflater.inflate(R.layout.singlerow, parent, false);
         return new myviewholder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull myviewholder holder, int position) {
 
-        //Fetch data
-        holder.name.setText(dataList.get(position).getName());
-        holder.food.setText(dataList.get(position).getFoodItem());
-        holder.address.setText(dataList.get(position).getAddress());
-        holder.number.setText(dataList.get(position).getPhone());
+        if (dataList != null && dataList.size() > position) {
+
+            holder.name.setText(dataList.get(position).getName());
+            holder.food.setText(dataList.get(position).getFoodItem());
+            holder.address.setText(dataList.get(position).getAddress());
+            holder.number.setText(dataList.get(position).getPhone());
+        }
 
     }
 
@@ -55,10 +61,11 @@ public class myadapter extends RecyclerView.Adapter<myadapter.myviewholder> {
         return dataList.size();
     }
 
-    class myviewholder extends RecyclerView.ViewHolder{
+    class myviewholder extends RecyclerView.ViewHolder {
 
         TextView name, food, number, address, completeDonation;
         Button accept, reject;
+
         public myviewholder(@NonNull View itemView) {
             super(itemView);
 
@@ -74,7 +81,7 @@ public class myadapter extends RecyclerView.Adapter<myadapter.myviewholder> {
                 @Override
                 public void onClick(View view) {
                     completeDonation.setVisibility(View.VISIBLE);
-
+                    userID = FirebaseAuth.getInstance().getCurrentUser().getUid();
                     // Assuming you have a user document in Firestore for the current user.
                     DocumentReference donorDocument = fStore.collection("user donor").document(userID);
 
@@ -103,7 +110,6 @@ public class myadapter extends RecyclerView.Adapter<myadapter.myviewholder> {
             });
 
 
-
             reject.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
@@ -117,4 +123,6 @@ public class myadapter extends RecyclerView.Adapter<myadapter.myviewholder> {
 
 
     }
+
+
 }

@@ -22,8 +22,6 @@ public class Splash extends AppCompatActivity {
         lottieAnimationView.playAnimation();
 
 
-
-
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
@@ -32,6 +30,6 @@ public class Splash extends AppCompatActivity {
                 startActivity(intent);
 
             }
-        },6000);
+        }, 6000);
     }
 }

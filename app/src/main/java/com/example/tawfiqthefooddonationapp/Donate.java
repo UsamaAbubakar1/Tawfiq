@@ -55,59 +55,60 @@ public class Donate extends AppCompatActivity {
                 String fooditem = editFood.getText().toString().trim();
                 String Address = editAddress.getText().toString().trim();
                 String phone = editPhone.getText().toString().trim();
-                String type= "Donor";
+                String type = "Donor";
 
-                if(TextUtils.isEmpty(fullname))
-                {
+                if (TextUtils.isEmpty(fullname)) {
                     editName.setError("Name is Required.");
                     return;
                 }
 
-                if(TextUtils.isEmpty(fooditem))
-                {
+                if (TextUtils.isEmpty(fooditem)) {
                     editFood.setError("Required.");
                     return;
                 }
 
-                if(phone.length() < 11)
-                {
+                if (phone.length() < 11) {
                     editPhone.setError("Phone Number Must be >=11 Characters");
                     return;
                 }
+                if (fAuth.getCurrentUser() != null) {
 
-                userID = fAuth.getCurrentUser().getUid();
-                //DocumentReference documentReference = fStore.collection("donate").document(userID);
-                CollectionReference collectionReference = fStore.collection("user donor");
+                    userID = fAuth.getCurrentUser().getUid();
+                    //DocumentReference documentReference = fStore.collection("donate").document(userID);
+                    CollectionReference collectionReference = fStore.collection("user donor");
 
-                Map<String,Object> user = new HashMap<>();
-                user.put("timestamp", FieldValue.serverTimestamp());
-                user.put("name",fullname);
-                user.put("food item",fooditem);
-                user.put("phone",phone);
-                user.put("address",Address);
-                user.put("userid",userID);
-                user.put("type",type);
+                    Map<String, Object> user = new HashMap<>();
+                    user.put("timestamp", FieldValue.serverTimestamp());
+                    user.put("name", fullname);
+                    user.put("food item", fooditem);
+                    user.put("phone", phone);
+                    user.put("address", Address);
+                    user.put("userid", userID);
+                    user.put("type", type);
 
-                Task<DocumentReference> documentReferenceTask = collectionReference.add(user)
-                        .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
-                            @Override
-                            public void onSuccess(DocumentReference documentReference) {
-                                Toast.makeText(getApplicationContext(), "Thank you for your generous food donation! Your support is helping us make a difference one meal at a time.", Toast.LENGTH_LONG).show();
-                                Log.d(TAG, "Success!");
-                                //startActivity(new Intent(getApplicationContext(),MainActivity.class));
-                                Intent intent = new Intent(Donate.this, MainActivity.class);
-                                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
-                                startActivity(intent);
-                            }
-                        })
-                        .addOnFailureListener(new OnFailureListener() {
-                            @Override
-                            public void onFailure(@NonNull Exception e) {
-                                Toast.makeText(getApplicationContext(), "Error!", Toast.LENGTH_SHORT).show();
-                                Log.w(TAG, "Error!", e);
-                            }
-                        });
-            }
-        });
-    }
+                    Task<DocumentReference> documentReferenceTask = collectionReference.add(user)
+                            .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
+                                @Override
+                                public void onSuccess(DocumentReference documentReference) {
+                                    Toast.makeText(getApplicationContext(), "Thank you for your generous food donation! Your support is helping us make a difference one meal at a time.", Toast.LENGTH_LONG).show();
+                                    Log.d(TAG, "Success!");
+                                    //startActivity(new Intent(getApplicationContext(),MainActivity.class));
+                                    Intent intent = new Intent(Donate.this, MainActivity.class);
+                                    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+                                    startActivity(intent);
+                                }
+                            })
+                            .addOnFailureListener(new OnFailureListener() {
+                                @Override
+                                public void onFailure(@NonNull Exception e) {
+                                    Toast.makeText(getApplicationContext(), "Error!", Toast.LENGTH_SHORT).show();
+                                    Log.w(TAG, "Error!", e);
+                                }
+                            });
+                    }
+                }
+
+            });
+
+        }
 }

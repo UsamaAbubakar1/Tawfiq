@@ -10,11 +10,16 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
+
+import com.bumptech.glide.Glide;
 
 
 public class CharityFragment extends Fragment {
 
     Button khidmat, edhi, skhospital, chipa, jdc, saylani;
+
+    ImageView alkhidmatimg;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -27,6 +32,9 @@ public class CharityFragment extends Fragment {
         chipa = rootView.findViewById(R.id.chipa);
         jdc = rootView.findViewById(R.id.jdc);
         saylani = rootView.findViewById(R.id.saylani);
+
+        alkhidmatimg = rootView.findViewById(R.id.Alkidmat_img);
+        Glide.with(this).load("https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Alkhidmat_Foundation_Pakistan.png/800px-Alkhidmat_Foundation_Pakistan.png").into(alkhidmatimg);
 
         khidmat.setOnClickListener(new View.OnClickListener() {
             @Override

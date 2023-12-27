@@ -19,11 +19,8 @@ import java.util.List;
 public class donorRequest extends AppCompatActivity {
 
     RecyclerView recView;
-
     private FirebaseFirestore fStore;
-
     myadapter adapter;
-
     ArrayList<model> dataList;
 
     @Override
@@ -34,7 +31,6 @@ public class donorRequest extends AppCompatActivity {
         // Initialize Firestore
         fStore = FirebaseFirestore.getInstance();
 
-
         // Initialize UI elements
         recView = findViewById(R.id.recview);
         recView.setLayoutManager(new LinearLayoutManager(this));
@@ -43,19 +39,21 @@ public class donorRequest extends AppCompatActivity {
         recView.setAdapter(adapter);
 
         // Fetch donor details from Firestore based on userID
-        fStore.collection("user donor").orderBy("timestamp",Query.Direction.DESCENDING).get()
+        fStore.collection("user donor").orderBy("timestamp", Query.Direction.DESCENDING).get()
                 .addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
                     @Override
                     public void onSuccess(QuerySnapshot queryDocumentSnapshots) {
                         List<DocumentSnapshot> list = queryDocumentSnapshots.getDocuments();
-                        for (DocumentSnapshot d:list){
-                            model obj = d.toObject(model.class);
-                            dataList.add(obj);
+                        if (dataList != null) {
+                            dataList.clear();
+                            for (DocumentSnapshot d : list) {
+                                model obj = d.toObject(model.class);
+                                dataList.add(obj);
+                            }
+                            // update adapter here
+                            adapter.notifyDataSetChanged();
                         }
-                        // update adapter here
-                        adapter.notifyDataSetChanged();
                     }
                 });
-
     }
 }

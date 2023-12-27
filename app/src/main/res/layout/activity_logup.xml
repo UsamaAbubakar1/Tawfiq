@@ -1,122 +1,124 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
     android:background="@drawable/hometab"
-    android:orientation="vertical"
     android:gravity="center"
+    android:orientation="vertical"
     android:padding="16dp"
     tools:context=".Logup">
-
-    <!-- Logo or Image (customize as needed) -->
 
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="650dp"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/login"
-            android:layout_marginBottom="100dp"
-            android:textStyle="bold"
-            android:textSize="27sp"
             android:layout_gravity="center"
-            android:textColor="@color/white"/>
+            android:layout_marginBottom="100dp"
+            android:text="@string/login"
+            android:textColor="@color/white"
+            android:textSize="27sp"
+            android:textStyle="bold" />
 
-    <ImageView
-        android:id="@+id/logoImageView"
-        android:layout_width="200dp"
-        android:layout_height="150dp"
-        android:layout_gravity="center"
-        android:layout_marginBottom="12dp"
-        android:src="@drawable/login"
-        android:contentDescription="@string/imagelogin" />
+        <ImageView
+            android:id="@+id/logoImageView"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="12dp"
+            android:contentDescription="@string/imagelogin"
+            android:src="@drawable/login" />
 
-    <!-- Username EditText -->
+        <!-- Username EditText -->
         <EditText
             android:id="@+id/edttxtemail"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="60dp"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="20dp"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/custom_mail_icon"
+            android:drawablePadding="10dp"
             android:hint="@string/enter_your_email"
             android:importantForAutofill="no"
             android:inputType="textEmailAddress"
             android:maxLines="1"
-            android:padding="12dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
             android:singleLine="true"
             android:textColor="@color/black"
-            android:foreground="@drawable/border_selector"
-            android:background="@drawable/rounded_button"
             android:textColorHint="#78909C"
             android:textSize="20sp" />
 
-    <!-- Password EditText -->
+        <!-- Password EditText -->
 
         <!-- Login Button -->
         <EditText
             android:id="@+id/edttxtpassword"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
+            android:layout_height="60dp"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="20dp"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/custom_password_icon"
+            android:drawablePadding="10dp"
             android:hint="@string/enter_your_password"
             android:importantForAutofill="no"
             android:inputType="textPassword"
             android:maxLines="1"
-            android:padding="12dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
             android:singleLine="true"
             android:textColor="@color/black"
-            android:foreground="@drawable/border_selector"
-            android:background="@drawable/rounded_button"
             android:textColorHint="#78909C"
             android:textSize="20sp" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/loginButton"
             android:layout_width="200dp"
-            android:layout_height="wrap_content" android:text="@string/loginbtn"
-            android:textStyle="bold"
-            android:background="@drawable/rounded_button"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginBottom="20dp"
-            android:textColor="@color/black"/>
+            android:background="@drawable/rounded_button"
+            android:text="@string/loginbtn"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:layout_marginBottom="70dp"
-        android:layout_marginStart="95dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="95dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="70dp">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/not_an_account"
-        android:layout_gravity="end"
-        android:textColor="@color/white"
-        android:textSize="16sp"
-        android:layout_marginTop="16dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="16dp"
+                android:text="@string/not_an_account"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
 
-    <TextView
-        android:id="@+id/creataccount"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:text="@string/creat_account"
-        android:layout_gravity="end"
-        android:textColor="#2196F3"
-        android:textSize="16sp"
-        android:layout_marginTop="16dp"/>
+            <TextView
+                android:id="@+id/creataccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/creat_account"
+                android:textColor="#2196F3"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
 
     </LinearLayout>
-
-
-</LinearLayout>
 </LinearLayout>
