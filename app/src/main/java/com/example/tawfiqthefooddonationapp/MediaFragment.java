@@ -9,11 +9,15 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+
+import com.bumptech.glide.Glide;
 
 
 public class MediaFragment extends Fragment {
     CardView newsA, newsB, newsC, newsD, newsE,newsF,newsG,newsH,newsI,newsJ,newsK,newsL,newsM,newsN,newsO,newsP,newsQ,newsR,newsS,newsT,newsU,newsV,newsW,newsX,newsY,newsZ;
 
+    ImageView imgA, imgB;
 
 
     @Override
@@ -48,6 +52,14 @@ public class MediaFragment extends Fragment {
         newsX = rootView.findViewById(R.id.cardNewsx);
         newsY = rootView.findViewById(R.id.cardNewsy);
         newsZ = rootView.findViewById(R.id.cardNewsz);
+
+        imgA = rootView.findViewById(R.id.news_image_1);
+        imgB = rootView.findViewById(R.id.news_image_2);
+
+
+
+        Glide.with(this).load("https://humnews.pk/wp-content/uploads/2023/07/129179-amysmwudwl-1571201895-1024x538.jpg").into(imgA);
+        Glide.with(this).load("https://southasianvoices.org/wp-content/uploads/2023/04/4973650367_eba8751102_o-1095x616.jpg").into(imgB);
 
 
 

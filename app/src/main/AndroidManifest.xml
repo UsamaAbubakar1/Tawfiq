@@ -16,6 +16,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TawfiqTheFoodDonationApp"
         tools:targetApi="31">
+        <activity
+            android:name=".donateUs"
+            android:exported="false" />
+        <activity
+            android:name=".whomToDonate"
+            android:exported="false" />
+        <activity
+            android:name=".whyToDonate"
+            android:exported="false" />
+
 
         <activity
             android:name=".nearbyngo"
@@ -25,9 +35,6 @@
             android:exported="false" />
         <activity
             android:name=".donorRequest"
-            android:exported="false" />
-        <activity
-            android:name=".History"
             android:exported="false" />
         <activity
             android:name=".Splash"

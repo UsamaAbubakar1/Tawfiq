@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".whyToDonate">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:gravity="center"
+            android:text="Why To Donate"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="3dp"
+            app:cardElevation="4dp"
+            app:cardUseCompatPadding="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:text="Quranic References"
+                android:textSize="15sp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="5dp"
+            app:cardUseCompatPadding="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:text="قَوۡلٞ مَّعۡرُوفٞ وَمَغۡفِرَةٌ خَيۡرٞ مِّن صَدَقَةٖ يَتۡبَعُهَآ أَذٗىۗ وَٱللَّهُ غَنِيٌّ حَلِيم۞ٞ"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:text="اچھی بات کہنا اور درگزر کرنا (ف۵۵۲) اس خیرات سے بہتر ہے جس کے بعد ستانا ہو (ف۵۵۳) اور اللہ بے پراہ حلم والا ہے، ﴿۲۶۳﴾
+(ترجمہ: کنزالایمان)" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="120dp"
+                android:text="Kind words and forgiving of faults are better than sadaqah (charity) followed by injury. And Allah is Rich (Free of all wants) and He is Most-Forbearing." />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="5dp"
+            app:cardUseCompatPadding="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:text="وَمَآ أَنفَقۡتُم مِّن نَّفَقَةٍ أَوۡ نَذَرۡتُم مِّن نَّذۡرٖ فَإِنَّ ٱللَّهَ يَعۡلَمُهُۥۗ وَمَا لِلظَّٰلِمِينَ مِنۡ أَنصَارٍ"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:text="اور تم (خدا کی راہ میں) جس طرح کا خرچ کرو یا کوئی نذر مانو خدا اس کو جانتا ہے اور ظالموں کا کوئی مددگار نہیں  ﴿۲۷۰﴾" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="110dp"
+                android:text="And whatever you spend for spendings (e.g., in sadaqah - charity, etc. for Allah's Cause) or whatever vow you make, be sure Allah knows it all. And for the Zalimun (wrong-doers, etc.) there are no helpers." />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="5dp"
+            app:cardUseCompatPadding="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:text="وَمِنۡهُم مَّنۡ عَٰهَدَ ٱللَّهَ لَئِنۡ ءَاتَىٰنَا مِن فَضۡلِهِۦ لَنَصَّدَّقَنَّ وَلَنَكُونَنَّ مِنَ ٱلصَّٰلِحِينَ۞"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:text="اور ان میں سے بعض ایسے ہیں جنہوں نے خدا سے عہد کیا تھا کہ اگر وہ ہم کو اپنی مہربانی سے (مال) عطا فرمائے گا تو ہم ضرور خیرات کیا کریں گے اور نیک کاروں میں ہو جائیں گے  ﴿۷۵﴾
+(ترجمہ: فتح محمد جالندھری)" />
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="And of them are some who made a covenant with Allah (saying): If He bestowed on us of His Bounty, we will verily, give sadaqah (Zakat and voluntary charity in Allah's Cause) and will be certainly among those who are righteous."
+                android:layout_marginTop="130dp"/>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="5dp"
+            app:cardUseCompatPadding="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:text="لَّا خَيۡرَ فِي كَثِيرٖ مِّن نَّجۡوَىٰهُمۡ إِلَّا مَنۡ أَمَرَ بِصَدَقَةٍ أَوۡ مَعۡرُوفٍ أَوۡ إِصۡلَٰحِۭ بَيۡنَ ٱلنَّاسِۚ وَمَن يَفۡعَلۡ ذَٰلِكَ ٱبۡتِغَآءَ مَرۡضَاتِ ٱللَّهِ فَسَوۡفَ نُؤۡتِيهِ أَجۡرًا عَظِيمٗا۞"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="75dp"
+                android:text="ان کے اکثر مشوروں میں کچھ بھلائی نہیں (ف۳۰۳) مگر جو حکم دے خیرات یا اچھی بات یا لوگوں میں صلح کرنے کا اور جو اللہ کی رضا چاہنے کو ایسا کرے اسے عنقریب ہم بڑا ثواب دیں گے، ﴿۱۱۴﴾
+(ترجمہ: کنزالایمان)"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="140dp"
+                android:text="There is no good in most of their secret talks save (in) him who orders sadaqah (charity in Allah's Cause), or Ma'ruf (Islamic Monotheism and all the good and righteous deeds which Allah has ordained), or conciliation between mankind, and he who does this, seeking the good Pleasure of Allah, We shall give him a great reward."/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="5dp"
+            app:cardUseCompatPadding="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:text="فَلَمَّآ ءَاتَىٰهُم مِّن فَضۡلِهِۦ بَخِلُواْ بِهِۦ وَتَوَلَّواْ وَّهُم مُّعۡرِضُونَ"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:text="لیکن جب خدا نے ان کو اپنے فضل سے (مال) دیا تو اس میں بخل کرنے لگے اور (اپنے عہد سے) روگردانی کرکے پھر بیٹھے  ﴿۷۶﴾
+(ترجمہ: فتح محمد جالندھری)" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="130dp"
+                android:text="Then when He gave them of His Bounty, they became niggardly [refused to pay the sadaqah (Zakat or voluntary charity)], and turned away, averse."/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="3dp"
+            app:cardElevation="4dp"
+            app:cardUseCompatPadding="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:text="Hadith Refrences"
+            android:textSize="15sp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="5dp"
+            app:cardUseCompatPadding="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="عبداللہ بن عمر اور عبداللہ بن عباس رضی اللہ عنہما سے روایت ہے کہ   نبی اکرم صلی اللہ علیہ وسلم نے فرمایا: کسی شخص کے لیے جائز نہیں ہے کہ کسی کو کوئی عطیہ دے، یا کسی کو کوئی چیز ہبہ کرے اور پھر اسے واپس لوٹا لے، سوائے والد کے کہ وہ بیٹے کو دے کر اس سے لے سکتا ہے ۱؎، اس شخص کی مثال جو عطیہ دے کر ( یا ہبہ کر کے ) واپس لے لیتا ہے کتے کی مثال ہے، کتا پیٹ بھر کر کھا لیتا ہے، پھر قے کرتا ہے، اور اپنے قے کئے ہوئے کو دوبارہ کھا لیتا ہے ۔"
+            android:textSize="17sp"
+             />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Book : Sunan Abu Dawood"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_marginTop="190dp"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hadith No : 3539"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_marginTop="210dp"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="380dp"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="5dp"
+            app:cardUseCompatPadding="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:text="ہم سے محمد بن عبید نے بیان کیا، کہا کہ ہم سے عیسیٰ بن یونس نے عمر بن سعید سے یہ حدیث بیان کی، انہوں نے کہا کہ مجھے ابن ابی ملیکہ نے خبر دی ان سے عقبہ بن حارث رضی اللہ عنہ نے فرمایا کہ   میں نے مدینہ میں نبی کریم صلی اللہ علیہ وسلم کی اقتداء میں ایک مرتبہ عصر کی نماز پڑھی۔ سلام پھیرنے کے بعد آپ صلی اللہ علیہ وسلم جلدی سے اٹھ کھڑے ہوئے اور صفوں کو چیرتے ہوئے آپ صلی اللہ علیہ وسلم اپنی کسی بیوی کے حجرہ میں گئے۔ لوگ آپ صلی اللہ علیہ وسلم کی اس تیزی کی وجہ سے گھبرا گئے۔ پھر جب آپ صلی اللہ علیہ وسلم باہر تشریف لائے اور جلدی کی وجہ سے لوگوں کے تعجب کو محسوس فرمایا تو فرمایا کہ ہمارے پاس ایک سونے کا ڈلا ( تقسیم کرنے سے ) بچ گیا تھا مجھے اس میں دل لگا رہنا برا معلوم ہوا، میں نے اس کے بانٹ دینے کا حکم دے دیا۔"
+                android:textSize="17sp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Book : Sahih Bukhari"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_marginTop="310dp"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hadith No : 851"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_marginTop="330dp"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="650dp"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="5dp"
+            app:cardUseCompatPadding="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:text="ہم سے محمد بن ابی بکر نے بیان کیا، انہوں نے کہا کہ ہم سے معتمر بن سلیمان نے بیان کیا، ان سے عبیداللہ عمری نے بیان کیا، ان سے سمی نے بیان کیا، ان سے ابوصالح ذکوان نے بیان کیا ان سے ابوہریرہ رضی اللہ عنہ نے فرمایا کہ   نادار لوگ نبی کریم صلی اللہ علیہ وسلم کی خدمت میں حاضر ہوئے اور کہا کہ امیر و رئیس لوگ بلند درجات اور ہمیشہ رہنے والی جنت حاصل کر چکے حالانکہ جس طرح ہم نماز پڑھتے ہیں وہ بھی پڑھتے ہیں اور جیسے ہم روزے رکھتے ہیں وہ بھی رکھتے ہیں لیکن مال و دولت کی وجہ سے انہیں ہم پر فوقیت حاصل ہے کہ اس کی وجہ سے وہ حج کرتے ہیں۔ عمرہ کرتے ہیں۔ جہاد کرتے ہیں اور صدقے دیتے ہیں ( اور ہم محتاجی کی وجہ سے ان کاموں کو نہیں کر پاتے ) اس پر آپ نے فرمایا کہ لو میں تمہیں ایک ایسا عمل بتاتا ہوں کہ اگر تم اس کی پابندی کرو گے تو جو لوگ تم سے آگے بڑھ چکے ہیں انہیں تم پالو گے اور تمہارے مرتبہ تک پھر کوئی نہیں پہنچ سکتا اور تم سب سے اچھے ہو جاؤ گے سوا ان کے جو یہی عمل شروع کر دیں ہر نماز کے بعد تینتیس تینتیس مرتبہ تسبیح «سبحان الله»،‏‏‏‏ تحمید «الحمد لله»،‏‏‏‏ تکبیر «الله أكبر» کہا کرو۔ پھر ہم میں اختلاف ہو گیا کسی نے کہا کہ ہم تسبیح «سبحان الله» تینتیس مرتبہ، تحمید «الحمد لله» تینتیس مرتبہ اور تکبیر «الله أكبر» چونتیس مرتبہ کہیں گے۔ میں نے اس پر آپ صلی اللہ علیہ وسلم سے دوبارہ معلوم کیا تو آپ صلی اللہ علیہ وسلم نے فرمایا کہ «سبحان الله»،‏‏‏‏ «الحمد لله» اور «الله أكبر» کہو تاآنکہ ہر ایک ان میں سے تینتیس مرتبہ ہو جائے۔"
+                android:textSize="17sp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Book : Sahih Bukhari"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_marginTop="560dp"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hadith No : 843"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_marginTop="580dp"/>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+</ScrollView>

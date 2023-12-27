@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@drawable/dashboard"
+    android:orientation="vertical"
     tools:context=".nearbyngo">
 
     <LinearLayout
@@ -40,28 +40,26 @@
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="20dp"
-            android:hint="Search Near By NGO's"
+            android:background="@drawable/custom_input"
+            android:hint="Enter Your City Name"
             android:importantForAutofill="no"
             android:inputType="textEmailAddress"
             android:maxLines="1"
             android:padding="12dp"
             android:singleLine="true"
             android:textColor="@color/black"
-            android:foreground="@drawable/border_selector"
-            android:background="@drawable/rounded_button"
             android:textColorHint="#78909C"
-            android:textSize="20sp"
-            />
+            android:textSize="20sp" />
 
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/nearbyngosubmit"
             android:layout_width="170dp"
-            android:layout_gravity="center"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:layout_margin="10dp"
-            android:text="Submit"
             android:background="@drawable/rounded_button"
+            android:text="Submit"
             android:textColor="@color/black" />
     </LinearLayout>
 

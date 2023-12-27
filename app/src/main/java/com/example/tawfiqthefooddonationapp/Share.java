@@ -27,7 +27,7 @@ public class Share extends AppCompatActivity {
                 intent.setType("text/plain");
 
 
-                if(intent.resolveActivity(getPackageManager()) != null){
+                if (intent.resolveActivity(getPackageManager()) != null) {
                     startActivity(intent);
                 }
             }

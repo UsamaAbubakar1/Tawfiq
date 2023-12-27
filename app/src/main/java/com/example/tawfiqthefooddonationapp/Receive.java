@@ -14,6 +14,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.DocumentReference;
@@ -46,6 +47,7 @@ public class Receive extends AppCompatActivity {
         number = findViewById(R.id.editTextPhoneNumber_R);
         rcvBtn = findViewById(R.id.buttonRecv);
 
+
         rcvBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -63,37 +65,39 @@ public class Receive extends AppCompatActivity {
                 }
 
 
+                if (fAuth.getCurrentUser() != null) {
 
-                userID = Objects.requireNonNull(fAuth.getCurrentUser()).getUid();
-                //DocumentReference documentReference = fStore.collection("receiver").document(userID);
-                CollectionReference collectionReference = fStore.collection("user reciver");
+                    userID = fAuth.getCurrentUser().getUid();
+                    //DocumentReference documentReference = fStore.collection("receiver").document(userID);
+                    CollectionReference collectionReference = fStore.collection("user reciver");
 
-                Map<String, Object> user = new HashMap<>();
-                user.put("timestamp", FieldValue.serverTimestamp());
-                user.put("name", fullname);
-                user.put("phone", phone);
-                user.put("userid", userID);
-                user.put("type", type);
+                    Map<String, Object> user = new HashMap<>();
+                    user.put("timestamp", FieldValue.serverTimestamp());
+                    user.put("name", fullname);
+                    user.put("phone", phone);
+                    user.put("userid", userID);
+                    user.put("type", type);
 
-                collectionReference.add(user)
-                        .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
-                            @Override
-                            public void onSuccess(DocumentReference documentReference) {
+                    Task<DocumentReference> documentReferenceTask = collectionReference.add(user)
+                            .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
+                                @Override
+                                public void onSuccess(DocumentReference documentReference) {
 
-                                //startActivity(new Intent(getApplicationContext(),MainActivity.class));
-                                Intent intent = new Intent(Receive.this, donorRequest.class);
-                                startActivity(intent);
-                                finish();
-                            }
-                        })
-                        .addOnFailureListener(new OnFailureListener() {
-                            @Override
-                            public void onFailure(@NonNull Exception e) {
-                                Toast.makeText(getApplicationContext(), "Error!", Toast.LENGTH_SHORT).show();
-                                Log.w(TAG, "Error!", e);
-                            }
-                        });
+                                    //startActivity(new Intent(getApplicationContext(),MainActivity.class));
+                                    Intent intent = new Intent(Receive.this, donorRequest.class);
+                                    startActivity(intent);
+                                    finish();
+                                }
+                            })
+                            .addOnFailureListener(new OnFailureListener() {
+                                @Override
+                                public void onFailure(@NonNull Exception e) {
+                                    Toast.makeText(getApplicationContext(), "Error!", Toast.LENGTH_SHORT).show();
+                                    Log.w(TAG, "Error!", e);
+                                }
 
+                            });
+                }
             }
         });
     }

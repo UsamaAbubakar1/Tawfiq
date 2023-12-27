@@ -18,12 +18,12 @@
     <string name="about_us">About Us</string>
     <string name="contact_us">Contact Us</string>
     <string name="log_out">Log Out</string>
-    <string name="enter_your_name">Enter Your Name:</string>
-    <string name="enter_food_items">Enter Food Items:</string>
-    <string name="enter_phone_num">Enter Phone Num:</string>
+    <string name="enter_your_name">Enter Your Name</string>
+    <string name="enter_food_items">Enter Food Items</string>
+    <string name="enter_phone_num">Enter Phone Num</string>
     <string name="donatedash">Donate</string>
     <string name="receivename">Receive</string>
-    <string name="enter_receiver_name">Enter Receiver Name:</string>
+    <string name="enter_receiver_name">Enter Receiver Name</string>
     <string name="receivehint">Receive</string>
     <string name="map_food">Food Map</string>
     <string name="share_this_app">share This App</string>
@@ -43,9 +43,9 @@
     <string name="tab_text_2">Tab 2</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="enter_your_namedonate">Enter your name:</string>
-    <string name="enter_your_food_items_donate">Enter your food items:</string>
-    <string name="enter_your_phone_number_doante">Enter your phone number:</string>
+    <string name="enter_your_namedonate">Enter your name</string>
+    <string name="enter_your_food_items_donate">Enter your food items</string>
+    <string name="enter_your_phone_number_doante">Enter your phone number</string>
     <string name="donate_donate_activity">Donate</string>
     <string name="food_items_donate_activity">Food Items</string>
     <string name="your_name_donate_activity">Your Name</string>
@@ -123,10 +123,20 @@
     <string name="email_error" />
     <string name="error_invalid_email" />
     <string name="phone_error" />
-    <string name="donor_name">Donor Name: %1$s</string>
-    <string name="food_items">Food Items: %1$s</string>
-    <string name="number">Phone Number: %1$s</string>
+    <string name="donor_name">Donor Name </string>
+    <string name="food_items">Food Items </string>
+    <string name="number">Phone Number </string>
     <string name="message_error" />
-</resources>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="whom_to_donate">Whom To Donate</string>
+    <string name="poor_fuqara">♦ Poor (Fuqara)</string>
+    <string name="needy_masakin">♦ Needy (Masakin)</string>
+    <string name="collectors_of_zakat_al_aamileen">♦ Collectors of Zakat (Al-‘Aamileen)</string>
+    <string name="those_whose_hearts_are_to_be_reconciled_mu_allafat_al_qulub">♦ Those whose hearts are to be reconciled (Mu’allafat al-Qulub)</string>
+    <string name="slaves_or_captives_ar_riqaab">♦ Slaves or captives (Ar-Riqaab)</string>
+    <string name="debtors_al_gharimeen">♦ Debtors (Al-Gharimeen)</string>
+    <string name="wayfarers_ibnus_sabeel">♦ Wayfarers (Ibnus-Sabeel)</string>
 
+</resources>
 

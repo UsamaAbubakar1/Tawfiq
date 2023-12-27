@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/whyToDonateMenu"
+        android:icon="@drawable/whydoante"
+        android:title="Why To Donate" />
+
+    <item
+        android:id="@+id/whomToDonateMenu"
+        android:icon="@drawable/whomdonate"
+        android:title="Whom to Donate" />
+    <item
+        android:id="@+id/donateUsMenu"
+        android:icon="@drawable/usdonate"
+        android:title="Donate Us" />
+
+</menu>

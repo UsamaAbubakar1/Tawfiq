@@ -10,21 +10,7 @@ public class model {
 
     String phone;
     String address;
-    String timestamp;
 
-
-
-    public model() {
-    }
-
-
-
-    public model(String name, String foodItem, String phone, String address) {
-        this.name = name;
-        this.foodItem = foodItem;
-        this.phone = phone;
-        this.address = address;
-    }
 
     public String getName() {
         return name;
@@ -59,7 +45,6 @@ public class model {
     public void setAddress(String address) {
         this.address = address;
     }
-
 
 
 

@@ -1,38 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/drawarLayout"
     android:background="@drawable/hometab"
     tools:context=".MainActivity">
 
+    <include android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        layout="@layout/nav_view"/>
 
-
-
-
-    <androidx.viewpager.widget.ViewPager
-        android:id="@+id/view_pager"
+    <com.google.android.material.navigation.NavigationView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:contentDescription="@string/title_activity_tabview" />
+        android:id="@+id/navigationView"
+        app:menu="@menu/nav_menu"
+        app:headerLayout="@layout/activity_drawer_header"
+        android:fitsSystemWindows="true"
+        android:layout_gravity="start"/>
 
 
-    <com.google.android.material.tabs.TabLayout
-        android:id="@+id/tab_layout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:foreground="@drawable/border_selector"
-        android:background="@null"
-        app:tabIndicatorColor="@color/white"
-        app:tabSelectedTextColor="#FDD835"
-        app:tabTextColor="@color/white"
-        android:layout_margin="25dp"
-        android:padding="3dp"
-        android:contentDescription="@string/app_name"
-        app:tabGravity="fill"
-        app:tabMode="fixed" />
 
-
-</RelativeLayout>
+</androidx.drawerlayout.widget.DrawerLayout>
